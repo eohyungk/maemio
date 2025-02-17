@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#ffffff"/>
+    
+    <!-- Client Layer -->
+    <g transform="translate(300,20)">
+        <rect width="200" height="60" rx="10" fill="#2563eb" opacity="0.9"/>
+        <text x="100" y="35" text-anchor="middle" fill="white" font-size="16">Client Applications</text>
+    </g>
+
+    <!-- Transaction Layer -->
+    <g transform="translate(300,100)">
+        <rect width="200" height="80" rx="10" fill="#1e40af" opacity="0.9"/>
+        <text x="100" y="35" text-anchor="middle" fill="white" font-size="16">Transaction Manager</text>
+        <text x="100" y="55" text-anchor="middle" fill="white" font-size="12">MVCC + Serializable Isolation</text>
+    </g>
+
+    <!-- Index Layer -->
+    <g transform="translate(50,220)">
+        <rect width="700" height="80" rx="10" fill="#3b82f6" opacity="0.9"/>
+        <text x="350" y="35" text-anchor="middle" fill="white" font-size="16">Index Layer</text>
+        <g transform="translate(20,45)">
+            <text x="120" y="0" text-anchor="middle" fill="white" font-size="12">B-tree Index</text>
+            <text x="350" y="0" text-anchor="middle" fill="white" font-size="12">Hash Index</text>
+            <text x="550" y="0" text-anchor="middle" fill="white" font-size="12">Key Types: Int, String, Bytes</text>
+        </g>
+    </g>
+
+    <!-- Storage Layer -->
+    <g transform="translate(50,320)">
+        <rect width="700" height="200" rx="10" fill="#1d4ed8" opacity="0.8"/>
+        <text x="350" y="35" text-anchor="middle" fill="white" font-size="16">Storage Layer (Non-Relational)</text>
+        
+        <!-- Record Structure -->
+        <g transform="translate(50,60)">
+            <rect width="180" height="120" rx="5" fill="white" opacity="0.9"/>
+            <text x="90" y="25" text-anchor="middle" font-size="14">Record Structure</text>
+            <text x="20" y="50" font-size="12">• Record ID (u64)</text>
+            <text x="20" y="70" font-size="12">• Version List</text>
+            <text x="20" y="90" font-size="12">• Raw Data (Vec&lt;u8&gt;)</text>
+            <text x="20" y="110" font-size="12">• Timestamps</text>
+        </g>
+
+        <!-- Version Management -->
+        <g transform="translate(260,60)">
+            <rect width="180" height="120" rx="5" fill="white" opacity="0.9"/>
+            <text x="90" y="25" text-anchor="middle" font-size="14">Version Control</text>
+            <text x="20" y="50" font-size="12">• Multi-Version</text>
+            <text x="20" y="70" font-size="12">• Best-effort Inlining</text>
+            <text x="20" y="90" font-size="12">• Version Chain</text>
+            <text x="20" y="110" font-size="12">• Garbage Collection</text>
+        </g>
+
+        <!-- Key-Value Nature -->
+        <g transform="translate(470,60)">
+            <rect width="180" height="120" rx="5" fill="white" opacity="0.9"/>
+            <text x="90" y="25" text-anchor="middle" font-size="14">Data Model</text>
+            <text x="20" y="50" font-size="12">• Key-Value Store</text>
+            <text x="20" y="70" font-size="12">• Schema-less</text>
+            <text x="20" y="90" font-size="12">• Binary Values</text>
+            <text x="20" y="110" font-size="12">• No Native Joins</text>
+        </g>
+    </g>
+
+    <!-- Connection Lines -->
+    <g stroke="#94a3b8" stroke-width="2">
+        <path d="M400,80 L400,100" fill="none"/>
+        <path d="M400,180 L400,220" fill="none"/>
+        <path d="M400,300 L400,320" fill="none"/>
+    </g>
+
+    <!-- Missing Features Note -->
+    <g transform="translate(50,540)">
+        <text x="0" y="0" font-size="14" fill="#64748b">Missing Relational Features:</text>
+        <text x="0" y="20" font-size="12" fill="#64748b">• Schema Management  • SQL Processing  • Join Operations  • Referential Integrity  • Complex Queries</text>
+    </g>
+</svg>
