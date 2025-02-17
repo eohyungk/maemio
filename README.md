@@ -84,16 +84,6 @@ db.start_maintenance()?;
 // Create and use the database...
 ```
 
-## Adding Images to Your README
-
-To add images to this README, follow these steps:
-
-1. Create an `images/` directory in your repository root
-2. Add your image files:
-   - `logo.png`: Project logo
-   - `architecture.svg`: System architecture diagram
-   - `transaction-flow.svg`: Transaction processing flow
-   - `performance-benchmark.png`: Performance metrics visualization
 
 ### Image Guidelines
 
