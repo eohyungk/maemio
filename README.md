@@ -1,4 +1,4 @@
-# Maemio: High-Performance In-Memory Database
+# Maemio: A high through-put Rust-based transactional key-value store for embedded systems 
 
 ![Project Logo](images/logo.png)
 
