@@ -1,22 +1,22 @@
-# Maemio: A high through-put Rust-based transactional key-value store for embedded systems 
+# MaemIO: A high through-put Rust-based transactional key-value store for embedded systems 
 
 ![Project Logo](images/logo.png)
 
 ## Overview
 
-Maemio is a cutting-edge, high-throughput transactional database system built in Rust, implementing innovative design principles for exceptional performance and reliability. Inspired by the Cicada research paper, Maemio delivers a robust in-memory key-value store with advanced concurrency control.
+MaemIO is a cutting-edge, high-throughput transactional database system built in Rust, implementing innovative design principles for exceptional performance and reliability. Inspired by the Cicada research paper, MaemIO delivers a robust in-memory key-value store with advanced concurrency control.
 
 ## System Architecture
 
 ![System Architecture](images/architecture.svg)
 
-*Architectural overview of Maemio's multi-layered database design*
+*Architectural overview of MaemIO's multi-layered database design*
 
 ## Transaction Flow
 
 ![Transaction Flow](images/transaction-flow.svg)
 
-*Visualization of Maemio's transaction processing steps*
+*Visualization of MaemIO's transaction processing steps*
 
 ## Key Features
 
@@ -58,7 +58,7 @@ Maemio is a cutting-edge, high-throughput transactional database system built in
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/maemio.git
+git clone https://github.com/yourusername/MaemIO.git
 
 # Build the project
 cargo build --release
@@ -71,14 +71,14 @@ cargo test
 
 ```rust
 // Initialize database with custom configuration
-let config = MaemioConfig {
+let config = MaemIOConfig {
     thread_count: 4,
     gc_interval: 20,
     clock_sync_interval: 200,
     initial_index_capacity: 2048,
 };
 
-let db = Maemio::with_config(config)?;
+let db = MaemIO::with_config(config)?;
 db.start_maintenance()?;
 
 // Create and use the database...
@@ -129,4 +129,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [@your_twitter](https://twitter.com/your_twitter)
 
-Project Link: [https://github.com/yourusername/maemio](https://github.com/yourusername/maemio)
+Project Link: [https://github.com/yourusername/MaemIO](https://github.com/yourusername/MaemIO)
