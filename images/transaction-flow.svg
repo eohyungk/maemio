@@ -6,44 +6,44 @@
     <g transform="translate(50,50)">
         <!-- Begin -->
         <rect width="120" height="60" rx="8" fill="#2563eb" opacity="0.9"/>
-        <text x="60" y="35" text-anchor="middle" fill="white" font-size="14">Begin TX</text>
+        <text x="60" y="35" text-anchor="middle" fill="white" font-size="14">Begin Transaction</text>
         
         <!-- Read Phase -->
-        <g transform="translate(170,0)">
+        <g transform="translate(200,0)">
             <rect width="120" height="60" rx="8" fill="#3b82f6" opacity="0.9"/>
             <text x="60" y="35" text-anchor="middle" fill="white" font-size="14">Read Phase</text>
         </g>
         
         <!-- Validation -->
-        <g transform="translate(340,0)">
+        <g transform="translate(370,0)">
             <rect width="120" height="60" rx="8" fill="#1e40af" opacity="0.9"/>
             <text x="60" y="35" text-anchor="middle" fill="white" font-size="14">Validation</text>
         </g>
         
         <!-- Write Phase -->
-        <g transform="translate(510,0)">
+        <g transform="translate(540,0)">
             <rect width="120" height="60" rx="8" fill="#2563eb" opacity="0.9"/>
             <text x="60" y="35" text-anchor="middle" fill="white" font-size="14">Write Phase</text>
         </g>
 
         <!-- Success/Fail Outcomes -->
-        <g transform="translate(510,120)">
+        <g transform="translate(540,120)">
             <rect width="120" height="60" rx="8" fill="#16a34a" opacity="0.9"/>
             <text x="60" y="35" text-anchor="middle" fill="white" font-size="14">Commit</text>
         </g>
         
-        <g transform="translate(340,120)">
+        <g transform="translate(370,120)">
             <rect width="120" height="60" rx="8" fill="#dc2626" opacity="0.9"/>
             <text x="60" y="35" text-anchor="middle" fill="white" font-size="14">Abort & Retry</text>
         </g>
 
         <!-- Arrows -->
         <g stroke="#94a3b8" stroke-width="2">
-            <path d="M120,30 L170,30" fill="none" marker-end="url(#arrowhead)"/>
-            <path d="M290,30 L340,30" fill="none" marker-end="url(#arrowhead)"/>
-            <path d="M460,30 L510,30" fill="none" marker-end="url(#arrowhead)"/>
-            <path d="M570,60 L570,120" fill="none" marker-end="url(#arrowhead)"/>
-            <path d="M400,60 L400,120" fill="none" marker-end="url(#arrowhead)"/>
+            <path d="M170,30 L200,30" fill="none" marker-end="url(#arrowhead)"/>
+            <path d="M320,30 L370,30" fill="none" marker-end="url(#arrowhead)"/>
+            <path d="M490,30 L540,30" fill="none" marker-end="url(#arrowhead)"/>
+            <path d="M600,60 L600,120" fill="none" marker-end="url(#arrowhead)"/>
+            <path d="M430,60 L430,120" fill="none" marker-end="url(#arrowhead)"/>
         </g>
     </g>
 
